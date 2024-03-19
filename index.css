@@ -143,7 +143,7 @@ body {
 }
 
 
-/*------------------------------ Section - 2 ------------------------------*/
+/*------------------------------ Feature - Section ------------------------------*/
 .feature-section{
     height:auto;
 }
@@ -162,7 +162,7 @@ body {
 }
 
 .container .heading{
-    margin-bottom:40px;
+    margin-bottom:60px;
     text-align: center;
 }
 
@@ -193,6 +193,10 @@ body {
     font-size: 3.5rem;
 }
 
+.feature .feature-desc{
+    padding-top: 5px;
+}
+
 .feature p{
     font-size: 0.8rem;
     line-height: 1.35rem;
@@ -200,4 +204,236 @@ body {
 }
 
 
-/*------------------------------  carousel - section ------------------------------*/
+/*------------------------------  Carousel - section ------------------------------*/
+
+
+/*------------------------------  Screenshots - section ------------------------------*/
+
+.screenshots-section{
+    height:auto;
+}
+
+.screenshots{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:3%;
+}
+
+.screenshots .screenshot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screenshot .screenshot-icon{
+    width:auto;
+    max-height: 500px;
+    color:white;
+    text-align: center;
+    position: relative;
+}
+
+.circle-1{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27%;
+    right: -17%;
+    z-index: 1;
+}
+
+.circle-2{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    top: 60%;
+    left: -25%;
+    z-index: 1;
+}
+
+.cloudy.circle-1{
+    background-color: #fcee6f;
+}
+
+.cloudy.circle-2{
+    background-color: #699efa;
+}
+
+.screenshot-icon img{
+    width:100%;
+    max-height: 500px;
+}
+
+.verticle-text{
+    font-weight: 300;
+    transform: rotate(90deg);
+    position: absolute;
+    color: #dbdbdb;
+    z-index: -1;
+}
+
+
+.cloudy.verticle-text{
+    top: 130px;
+    left: 5px;
+    font-size: 9rem;
+}
+
+.screenshot-desc{
+    width:50%;
+    height:60%;
+}
+
+.screenshot-desc .ss-icon{
+    margin-bottom: 5%;
+}
+
+.screenshot-desc h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+
+.screenshot-desc p{
+    font-size: 1rem;
+    line-height: 1.35rem;
+    color:rgb(95, 95, 95);
+    font-weight:500;
+    margin-bottom: 5%;
+}
+
+.temp-list{
+    list-style: none;
+}
+
+.list-temp{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px dashed #ddd;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px #cfcfcf;
+    margin-right: -15px;
+    background-color: #fff;
+    position: relative;
+    color:rgb(165, 165, 165);
+    text-align: center;
+}
+
+.temp-list:nth-child(1){
+    z-index: 2;
+}
+
+.temp-list:nth-child(2){
+    z-index: 1;
+}
+
+.temp-list:nth-child(3){
+    z-index: 0;
+}
+
+
+.sunny.circle-1{
+    background-color: #f2a155;
+}
+
+.sunny.circle-2{
+    background-color: #fc6944;
+}
+
+.sunny.verticle-text{
+    top: 120px;
+    left: 18px;
+    font-size: 10rem;
+}
+
+.rainy.circle-1{
+    background-color: #b6faee;
+}
+
+.rainy.circle-2{
+    background-color: #7792c7;
+}
+
+.rainy.verticle-text{
+    top: 120px;
+    left: 15px;
+    font-size: 11rem;
+}
+
+
+/*------------------------------  Reviewa - section ------------------------------*/
+.reviews-section{
+    height:auto;
+}
+
+.reviews{
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    gap:15%;
+}
+
+.review{
+    position: relative;;
+}
+
+#review-1{
+    grid-area: "a";
+}
+
+#review-2{
+    grid-area: "b";
+}
+
+#review-3{
+    grid-area: "c";
+}
+
+#review-4{
+    grid-area: "d";
+}
+
+.review h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #383a54;
+    margin-bottom: 10px;
+}
+
+
+.review p{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #3a415c;
+    margin-bottom: 10px;
+    position:absolute;
+    left:100px;
+    bottom:-10px;
+}
+
+.review::before{
+    content:open-quote;
+    font-size: 3.5rem;
+    color:#6188fa;
+    position: absolute;
+    top:-35px;
+    left:-15px
+}
+
+.review::after{
+    content:close-quote;
+    font-size: 3.5rem;
+    color:#6188fa;
+    position: absolute;
+    bottom:-30px;
+    right:50px
+}
