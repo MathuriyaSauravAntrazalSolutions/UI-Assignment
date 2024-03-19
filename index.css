@@ -107,7 +107,7 @@ body {
     margin-bottom: 10%;
 }
 
-.home-page .buttons{
+.buttons{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -436,4 +436,65 @@ body {
     position: absolute;
     bottom:-30px;
     right:50px
+}
+
+/*--------------------------- Download - Section -----------------------*/
+.download-section{
+    background-color: white;
+    background-image: url("./images/downloadbg.png");
+    background-position: center;
+    background-size: cover;
+    /* padding:0 10%; */
+    height:auto;
+    padding-top: 10%;
+    /* border:1px solid red; */
+}
+
+.download-container{
+    width: 100%;
+    height:auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    padding-top: 10px;
+    gap:10%;
+}
+
+.download-page{
+    width:50%;
+}
+
+.download-page h1{
+    font-size: 2rem;
+    line-height: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.download-page p{
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.download-image{
+    display: flex;
+    align-items: flex-end;
+}
+
+.download-image img{
+    height:270px;
+    width: auto;
+}
+
+/*--------------------------- Footer - Section -----------------------*/
+
+.footer-section{
+    background-color: #383a54;
+    padding-bottom: 2%;
+}
+
+.footer-section .navbar{
+    border-bottom: 1px solid rgb(143, 143, 143);
 }
