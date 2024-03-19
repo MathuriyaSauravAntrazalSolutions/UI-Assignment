@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+    /* border:1px solid red; */
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    background-image: url("./images/bodybg.png");
+}
+
+/*------------------------------ Section - 1 ------------------------------*/
+
+.main-section{
+    background-color: white;
+    background-image: url("./images/homebg.png");
+    background-position: center;
+    background-size: cover;
+    /* padding:0 10%; */
+    height:auto;
+    padding-bottom: 20px;
+    /* border:1px solid red; */
+}
+
+/*------ Navbar ------*/
+
+.navbar{
+    height: 10%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.navbar .left {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navbar .middle {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white
+}
+
+.navbar .right {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .right .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar .right a, .middle a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .middle a:hover {
+    border-bottom: 1px solid;
+    color:rgba(255, 255, 255, 1);
+}
+
+.navbar .right a:hover {
+    /* border-bottom: 1px solid; */
+    color:rgba(255, 255, 255, 1);
+}
+
+/*------ Home - page ------*/
+
+.home-page{
+    width: 100%;
+    height:auto;
+    max-width: 1000px;
+    margin: 70px auto;
+    display: flex;
+    justify-content:flex-start;
+    color:white;
+    /* border:1px solid red; */
+}
+
+.home-page .title{
+    width:50%;
+}
+
+.home-page .title h1{
+    font-size: 3em;
+    margin-bottom: 10%;
+}
+
+.home-page .buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+}
+
+.home-page .header-phone img{
+    height:500px;
+    width: auto;
+}
+
+.home-page .buttons div{
+    width:100px;
+    padding:14px 8px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 600;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+
+.home-page .buttons div:hover{
+    scale: 0.95;
+}
+
+.btn-1{
+    background-color: #fc6944;
+}
+
+.btn-2{
+    background-color: #4563c4;
+}
+
+
+/*------------------------------ Section - 2 ------------------------------*/
+.feature-section{
+    height:auto;
+}
+
+.container{
+    width: 100%;
+    height:auto;
+    max-width: 1000px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    padding: 10px;
+}
+
+.container .heading{
+    margin-bottom:40px;
+    text-align: center;
+}
+
+.container .heading h2{
+    color:#6188fa;
+    font-size: 2em;
+}
+
+.container .heading p{
+    color:rgb(162, 162, 162);
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    gap:3%;
+}
+
+.features .feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.feature .feature-icon{
+    color:#fa7d5a;
+    font-size: 3.5rem;
+}
+
+.feature p{
+    font-size: 0.8rem;
+    line-height: 1.35rem;
+    color:rgb(143, 143, 143);
+}
+
+
+/*------------------------------  carousel - section ------------------------------*/
