@@ -414,7 +414,6 @@ body {
 
 .swiper {
   width: 100%;
-  padding-top: 3.125rem;
 }
 
 .swiper-wrapper{
@@ -745,7 +744,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:white
+    color:white;
+    flex-wrap: wrap;
 }
 
 .footerNav .right {
@@ -753,6 +753,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footerNav .right .icon {
@@ -767,6 +768,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footerNav .middle a:hover {

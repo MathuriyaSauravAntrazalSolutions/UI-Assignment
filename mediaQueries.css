@@ -50,6 +50,7 @@
 
     .container{
         max-width: 800px;
+        padding:0;
     }
 
     .feature .feature-icon{
@@ -59,6 +60,13 @@
 
     .slider-container{
         max-width: 800px;
+        padding: 0;
+    }
+
+    .screenshots .screenshot {
+        justify-content: center;
+        align-items: center;
+        gap:5%;
     }
 
     .screenshot .screenshot-icon{
@@ -142,6 +150,7 @@
 
     .download-container{
         max-width: 800px;
+        gap:0;
     }
 
     .download-page h1{
@@ -277,137 +286,186 @@
         font-size: 2rem;
     }
 
-    .feature .feature-desc{
-        width:400px;
-    }
-
     .feature p{
         font-size: 1rem;
         line-height: 1.35rem;
         color:rgb(143, 143, 143);
     }
 
-    .slider-container{
-        max-width: 400px;
-        display: block;
+
+/*-----------------------------------------------------------------------------------*/
+
+
+.slider-container{
+    max-width: 800px;
+    padding: 0;
+}
+
+.screenshots .screenshot {
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+
+.screenshot .screenshot-icon{
+    max-height: 400px;
+}
+
+.circle-1{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.circle-2{
+    width: 40px;
+    height: 40px;
+    line-height: 70px;
+}
+
+.screenshot-icon img{
+    max-height: 300px;
+}
+
+.verticle-text{
+    font-weight: 200;
+}
+
+.cloudy.verticle-text{
+    top: 80px;
+    left: 1px;
+    font-size: 6rem;
+}
+
+.screenshot-desc h2{
+    font-size: 2rem;
+    line-height: 2rem;
+
+}
+
+.screenshot-desc p{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.list-temp{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding:4px;
+}
+
+.sunny.verticle-text{
+    top: 70px;
+    left: 0px;
+    font-size: 6.5rem;
+}
+
+.rainy.verticle-text{
+    top: 50px;
+    left: 0px;
+    font-size: 7rem;
+}
+/*-------------------------------------------------------*/
+.reviews {
+    gap: 25%;
+}
+.review p {
+    width:200px;
+    right: 50px;
+    bottom: -30px;
+}
+
+.review::after {
+    bottom: -30px;
+    right: 30px;
+}
+
+.download-container {
+overflow: hidden;
+}
+}
+
+
+@media only screen and (max-width:450px) {
+    #web-nav{
+        gap:45%;
     }
-
-
-    .screenshots-section{
-        height:auto;
-        width:100%;
+    #sticky-nav{
+        gap:45%;
     }
-
+    .home-page .header-phone img{
+        height: 400px;
+    }
     .screenshots{
-        min-width:450px;
+        width:auto;
+        max-width: 400px;
     }
-
-    .screenshots .screenshot{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        position: relative;
-        z-index: 1;
+    .screenshot-desc{
+        width:90%;
     }
-
-    .screenshot .screenshot-icon{
-        position:absolute;
-        top:20%;
-        left:0;
-        max-height: 300px;
-        z-index: 0;
-    }
-
-    .circle-1{
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-    }
-    
-    .circle-2{
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-    }
-
-    .screenshot-icon img{
-        max-height: 300px;
-    }
-
-    .verticle-text{
-        font-weight: 200;
-    }
-
-    .cloudy.verticle-text{
-        top: 80px;
-        left: 1px;
-        font-size: 3rem;
-    }
-
-    .screenshot-desc h2{
-        font-size: 1rem;
-        line-height: 1rem;
-
-    }
-
-    .screenshot-desc p{
-        font-size: 0.3rem;
-        line-height: 0.5rem;
-    }
-
     .list-temp{
-        width: 20px;
-        height: 20px;
-        line-height: 15px;
-        padding:4px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
-
-    .sunny.verticle-text{
-        top: 70px;
-        left: 0px;
-        font-size: 6.5rem;
-    }
-
-    .rainy.verticle-text{
-        top: 50px;
-        left: 0px;
-        font-size: 7rem;
-    }
-
-    .review h3{
-        font-size: 1.3rem;
-        line-height: 1.2rem;
-    }
-    
-    
-    .review p{
+    .screenshot-desc p {
         font-size: 1rem;
         line-height: 1.3rem;
     }
-    
-    .review::before{
-        font-size: 2.5rem;
+    .screenshots .screenshot{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;;
     }
-    
-    .review::after{
-        font-size: 2.5rem;
+    .screenshot .screenshot-icon{
+        display:none;
+    }
+    .reviews {
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b"
+            "c" 
+            "d";
+        gap: 15%;
+    }
+    #review-4{
+        margin-bottom: 100px;
     }
 
-    .download-container{
-        max-width: 800px;
+    .review p {
+        right: 60px;
+        bottom: -35px;
     }
 
-    .download-page h1{
-        font-size: 1.5rem;
+    .review::after {
+        bottom: -60px;
     }
-    
+
+    .container{
+        max-width: 550px;
+    }
     .download-page p{
-        line-height: 1rem;
+        line-height: 1;
+    }
+    .download-page .buttons{
+        flex-direction: column;
+    }
+    .download-image{
+        align-self: flex-end;
     }
 
-    .footerNav{
-        max-width: 800px;
+    .footerNav .middle {
+        width: auto;
+    }
+
+    .footerNav .right{
+        width:auto;
+    }
+
+    .footerNav .right{
+        flex-direction: column;
     }
 }
   
