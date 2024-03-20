@@ -35,9 +35,9 @@ body {
     /* border:1px solid red; */
 }
 
-/*------ Navbar ------*/
+/*------ Footer-nav ------*/
 
-.navbar{
+#web-nav{
     height: 10%;
     width: 100%;
     max-width: 1000px;
@@ -48,12 +48,12 @@ body {
     padding: 14px 0;
 }
 
-.navbar .left {
+#web-nav .left {
     font-size: 32px;
     font-weight: bold;
 }
 
-.navbar .middle {
+#web-nav .middle {
     width: 400px;
     display: flex;
     justify-content: space-between;
@@ -61,19 +61,20 @@ body {
     color:white
 }
 
-.navbar .right {
+#web-nav .right {
     width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar .right .icon {
+#web-nav .right .icon {
     width: 25px;
     height: 25px;
 }
 
-.navbar .right a,.navbar .middle a{
+#web-nav .right a, #web-nav .middle a{
+    letter-spacing: 1px;
     text-decoration: none;
     color:rgba(255, 255, 255, 0.7);
     font-weight: 600;
@@ -82,32 +83,32 @@ body {
     align-items: center;
 }
 
-.navbar .middle a:hover {
+#web-nav .middle a:hover {
     border-bottom: 1px solid;
     color:rgba(255, 255, 255, 1);
 }
 
-.navbar .right a:hover {
+#web-nav .right a:hover {
     /* border-bottom: 1px solid; */
     color:rgba(255, 255, 255, 1);
 }
+
+/*---------Sticky Nav----------*/
 
 #sticky-nav {
     width:100%;
     box-sizing: none;
     max-width: 1000px;
     display: none;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     position: fixed;
     top:0;
     padding:10px calc(calc(100% - 1000px) / 2);
     box-shadow: 0px 0px 10px 0px #cfcfcf;
-    z-index: 10;
+    z-index: 6;
     transition: display 0.5s ease;
-}
-
-#sticky-nav .right a,#sticky-nav .middle a {
-    color:black;
 }
 
 #sticky-nav .left{
@@ -123,6 +124,152 @@ body {
     object-fit: cover;
     width:100px;
 }
+
+#sticky-nav .middle {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white
+}
+
+#sticky-nav .right {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sticky-nav .right .icon {
+    width: 25px;
+    height: 25px;
+}
+
+#sticky-nav .right a,#sticky-nav .middle a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:#6188fa;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sticky-nav .middle a:hover {
+    border-bottom: 1px solid;
+}
+
+/*----------Mobile Nav ----------------*/
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: white;
+  height: 4px;
+  width: 36px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+
+.wbColorBar{
+    background-color: black;
+}
+
+#web-nav .hamburger {
+  display: none;
+}
+
+#web-nav .hamburger:hover {
+  cursor: pointer;
+}
+
+
+#sticky-nav .hamburger .bar1,
+#sticky-nav .hamburger .bar2,
+#sticky-nav .hamburger .bar3 {
+    background-color: black;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+
+.stColorBar{
+    background-color: white;
+}
+
+#sticky-nav .hamburger {
+    display: none;
+}
+
+#sticky-nav .hamburger:hover {
+    cursor: pointer;
+}
+
+#mobileNav {
+  width: 80px;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: -160px;
+  padding: 16px;
+  transition: transform 0.3s;
+  gap:5%;
+  box-shadow: 0px 0px 10px 0px #cfcfcf;
+  display: none;
+}
+
+.openDrawer {
+  transform: translateX(-160px);
+}
+
+#mobileNav .middle {
+    font-size: 1rem;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:3%;
+}
+
+#mobileNav .right {
+    color:black;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+
+#mobileNav .right .icon {
+    width: 25px;
+    height: 25px;
+}
+
+#mobileNav .right a,#mobileNav .middle a {
+    color:black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobileNav .middle a:hover {
+    border-bottom: 1px solid;
+}
+
 
 /*------ Home - page ------*/
 
@@ -556,10 +703,68 @@ body {
 /*--------------------------- Footer - Section -----------------------*/
 
 .footer-section{
+    position: relative;
+    z-index:6;
     background-color: #383a54;
     padding-bottom: 2%;
 }
 
-.footer-section .navbar{
+.footer-section .footerNav{
     border-bottom: 1px solid rgb(143, 143, 143);
+}
+
+
+.footerNav{
+    height: 10%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.footerNav .left {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.footerNav .middle {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white
+}
+
+.footerNav .right {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav .right .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.footerNav .right a,.footerNav .middle a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav .middle a:hover {
+    border-bottom: 1px solid;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footerNav .right a:hover {
+    /* border-bottom: 1px solid; */
+    color:rgba(255, 255, 255, 1);
 }

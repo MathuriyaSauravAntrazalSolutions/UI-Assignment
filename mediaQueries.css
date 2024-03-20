@@ -1,0 +1,72 @@
+@media only screen and (max-width: 768px) {
+    #mobileNav{
+      display: flex;
+    }
+
+    .wbColorBar{
+        background-color: black;
+    }
+
+
+    .stColorBar{
+        background-color: white;
+    }
+
+    #web-nav .middle, #web-nav .right{
+        display: none;
+    }
+
+    #sticky-nav .middle, #sticky-nav .right{
+        display: none;
+    }
+
+    #web-nav .hamburger, #sticky-nav .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 6;
+    }
+}
+  
+.animateBar1 {
+    animation: flipBar1 0.5s;
+    animation-fill-mode: forwards;
+}
+.animateBar2 {
+    animation: fadeBar2 0.5s;
+    animation-fill-mode: forwards;
+}
+.animateBar3 {
+    animation: flipBar3 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes flipBar1 {
+from {
+    transform: rotate(0);
+}
+to {
+    transform: rotate(45deg) translate(4px, 10px);
+}
+}
+
+@keyframes fadeBar2 {
+from {
+    transform: scaleX(1);
+    opacity: 1;
+}
+to {
+    transform: scaleX(0);
+    opacity: 0;
+}
+}
+
+@keyframes flipBar3 {
+from {
+    transform: rotate(0);
+}
+to {
+    transform: rotate(-45deg) translate(4px, -10px);
+}
+}
+  

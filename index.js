@@ -1,5 +1,51 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
+
+
+/**
+ * Mobile Drawer
+ */
+
+const webNavhamburger = document.querySelector(".wbNavHmbr");
+const webNavbar1 = document.querySelector(".wbBar1");
+const webNavbar2 = document.querySelector(".wbBar2");
+const webNavbar3 = document.querySelector(".wbBar3");
+const mobileNav = document.getElementById("mobileNav");
+
+webNavhamburger.addEventListener("click", () => {
+  webNavbar1.classList.toggle("animateBar1");
+  webNavbar2.classList.toggle("animateBar2");
+  webNavbar3.classList.toggle("animateBar3");
+  webNavbar1.classList.toggle("wbColorBar");
+  webNavbar2.classList.toggle("wbColorBar");
+  webNavbar3.classList.toggle("wbColorBar");
+  stickyNavbar1.classList.toggle("animateBar1");
+  stickyNavbar2.classList.toggle("animateBar2");
+  stickyNavbar3.classList.toggle("animateBar3");
+  mobileNav.classList.toggle("openDrawer");
+});
+
+
+const stickyNavhamburger = document.querySelector(".stNavHmbr");
+const stickyNavbar1 = document.querySelector(".stBar1");
+const stickyNavbar2 = document.querySelector(".stBar2");
+const stickyNavbar3 = document.querySelector(".stBar3");
+
+stickyNavhamburger.addEventListener("click", () => {
+  webNavbar1.classList.toggle("animateBar1");
+  webNavbar2.classList.toggle("animateBar2");
+  webNavbar3.classList.toggle("animateBar3");
+  webNavbar1.classList.toggle("wbColorBar");
+  webNavbar2.classList.toggle("wbColorBar");
+  webNavbar3.classList.toggle("wbColorBar");
+  stickyNavbar1.classList.toggle("animateBar1");
+  stickyNavbar2.classList.toggle("animateBar2");
+  stickyNavbar3.classList.toggle("animateBar3");
+  mobileNav.classList.toggle("openDrawer");
+});
+
+
+
 /**
  * Sticky Navbar
  */
@@ -22,20 +68,6 @@ function myFunction() {
 
 window.addEventListener("scroll", myFunction)
 
-
-
-// const hamburger = document.querySelector(".hamburger");
-// const bar1 = document.querySelector(".bar1");
-// const bar2 = document.querySelector(".bar2");
-// const bar3 = document.querySelector(".bar3");
-// const mobileNav = document.querySelector(".mobileNav");
-
-// hamburger.addEventListener("click", () => {
-//   bar1.classList.toggle("animateBar1");
-//   bar2.classList.toggle("animateBar2");
-//   bar3.classList.toggle("animateBar3");
-//   mobileNav.classList.toggle("openDrawer");
-// });
 
 
 /**
