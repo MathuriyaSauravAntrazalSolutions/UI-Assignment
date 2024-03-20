@@ -12,6 +12,15 @@ body {
     background-image: url("./images/bodybg.png");
 }
 
+/*------------------------------ Tilt - Effect ------------------------------*/
+
+.card {
+    transition: transform 5ms linear;
+    cursor: pointer;
+    user-select: none;
+  }
+
+
 /*------------------------------ Section - 1 ------------------------------*/
 
 .main-section{
@@ -204,7 +213,33 @@ body {
 }
 
 
-/*------------------------------  Carousel - section ------------------------------*/
+/*------------------------------  Slider - section ------------------------------*/
+
+
+.slider-container{
+    width: 100%;
+    height:auto;
+    max-width: 1000px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    padding: 10px;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper-3d {
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    background-image: none;
+  }
+}
 
 
 /*------------------------------  Screenshots - section ------------------------------*/

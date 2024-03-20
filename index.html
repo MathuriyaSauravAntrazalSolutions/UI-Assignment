@@ -6,7 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
     <title>UI ASSIGNMENT</title>
 </head>
 <body>
@@ -35,7 +40,7 @@
                     <div class="btn-2">Features</div>
                 </div>
             </div>
-            <div class="header-phone">
+            <div class="header-phone card">
                 <img src="./images/header-phone.png">
             </div>
         </div>
@@ -64,7 +69,6 @@
                 <div class="feature">
                     <div class="feature-icon">
                         <ion-icon class="icon" name="layers-outline"></ion-icon>
-
                     </div>                   
                     <div class="feature-desc">
                         <h3>Parallax Effect</h3>
@@ -90,10 +94,50 @@
         </div>
     </section>
 
-    <!------------------------ Carousel - Section ----------------------------->
-    <Section class="carousel-section" >
+    <!------------------------ Slider - Section ----------------------------->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide--1">
+                    <div class="c-card">
+                        <img src="./images/drag3.png">
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide--2">
+                    <div class="c-card">
+                        <img src="./images/drag1.png">
+                    </div>
+                  </div>
+            
+                  <div class="swiper-slide swiper-slide--3">
+                    <div class="c-card">
+                        <img src="./images/drag2.png">
+                    </div>
+                  </div>
+            
+                  <div class="swiper-slide swiper-slide--4">
+                    <div class="c-card">
+                        <img src="./images/drag3.png">
+                    </div>
+                  </div>
+            
+                  <div class="swiper-slide swiper-slide--5">
+                    <div class="c-card">
+                        <img src="./images/drag1.png">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-    </Section>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </section>
 
     <!------------------------ Screenshot - Section ----------------------------->
     <section class="screenshot-section">
@@ -105,7 +149,7 @@
 
             <div class="screenshots">
                 <div class="screenshot">
-                    <div class="screenshot-icon">
+                    <div class="screenshot-icon card">
                         <div class="circle-1 cloudy">Cloudy</div>
                         <div class="circle-2 cloudy">15 °</div>
                         <img src="./images/cloudy-mobile.png" alt="cloudy-mobile">
@@ -142,7 +186,7 @@
                             <li class="list-temp">Rainy</li>
                         </ul>
                     </div>
-                    <div class="screenshot-icon">
+                    <div class="screenshot-icon card">
                         <div class="circle-1 sunny">Sunny</div>
                         <div class="circle-2 sunny">15 °</div>
                         <img src="./images/sunny-mobile.png" alt="sunny-mobile">
@@ -151,7 +195,7 @@
                 </div>
 
                 <div class="screenshot">
-                    <div class="screenshot-icon">
+                    <div class="screenshot-icon card">
                         <div class="circle-1 rainy">Rainy</div>
                         <div class="circle-2 rainy">15 °</div>
                         <img src="./images/railny-mobile.png" alt="rainy-mobile">
@@ -252,8 +296,9 @@
             </div>
         </header>
     </footer>
-    <script src="./index.js"></script>
+    <script src="index.js" type="module"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
