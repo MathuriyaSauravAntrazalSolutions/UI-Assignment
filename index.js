@@ -3,20 +3,24 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 /**
  * Sticky Navbar
  */
-// window.onscroll = function() {myFunction()};
 
-// var navbar = document.getElementById("header-nav");
-// var home = document.getElementById("Home");
-// var sticky = home.offsetTop+10;
-// console.log(sticky);
+var navbar = document.getElementById("web-nav");
+var stickyNav = document.getElementById("sticky-nav");
+var home = document.getElementById("Home");
+var sticky = home.offsetTop+100;
 
-// function myFunction() {
-//   if (window.scrollY >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
+function myFunction() {
+  console.log(window.scrollY);
+  if (window.scrollY >= sticky) {
+    navbar.style.display="none";
+    stickyNav.style.display="flex";
+  } else {
+    navbar.style.display="flex";
+    stickyNav.style.display="none";
+  }
+}
+
+window.addEventListener("scroll", myFunction)
 
 
 
@@ -36,7 +40,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 /**
  * Tilt Effect On Card
-*/
+ */
 const cards = document.querySelectorAll(".card");
 
 function applyTiltOnMouserOver(event) {
