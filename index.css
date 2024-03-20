@@ -289,7 +289,7 @@ body {
 }
 
 .home-page .title h1{
-    font-size: 3em;
+    font-size: 3rem;
     margin-bottom: 10%;
 }
 
@@ -301,8 +301,14 @@ body {
     gap:20px;
 }
 
+.home-page .header-phone{
+    height:auto;
+    width: auto;
+}
+
+
 .home-page .header-phone img{
-    height:500px;
+    height:100%;
     width: auto;
 }
 
@@ -409,6 +415,10 @@ body {
 .swiper {
   width: 100%;
   padding-top: 3.125rem;
+}
+
+.swiper-wrapper{
+    width:100%;
 }
 
 .swiper-3d {
