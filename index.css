@@ -94,6 +94,24 @@ body {
     color:rgba(255, 255, 255, 1);
 }
 
+/* .sticky {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.sticky .right a, .middle a {
+    color:black;
+}
+
+.sticky .left{
+    background-color: #6188fa;
+    border-radius: 1rem;
+    padding: 3px 5px;
+} */
+
 /*------ Home - page ------*/
 
 .home-page{

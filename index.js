@@ -1,5 +1,24 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
+/**
+ * Sticky Navbar
+ */
+// window.onscroll = function() {myFunction()};
+
+// var navbar = document.getElementById("header-nav");
+// var home = document.getElementById("Home");
+// var sticky = home.offsetTop+10;
+// console.log(sticky);
+
+// function myFunction() {
+//   if (window.scrollY >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+
 
 // const hamburger = document.querySelector(".hamburger");
 // const bar1 = document.querySelector(".bar1");
