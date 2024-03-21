@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1100px) {
+
     #web-nav{
         padding:14px 15px;
         justify-content: space-around;
@@ -31,6 +32,7 @@
     .home-page{
         width: 100%;
         max-width: 800px;
+        padding: 20px;
         /* border:1px solid red; */
     }
 
@@ -50,7 +52,7 @@
 
     .container{
         max-width: 800px;
-        padding:0;
+        padding:20px;
     }
 
     .feature .feature-icon{
@@ -60,13 +62,13 @@
 
     .slider-container{
         max-width: 800px;
-        padding: 0;
+        padding: 20px;
     }
 
     .screenshots .screenshot {
         justify-content: center;
         align-items: center;
-        gap:5%;
+        gap:10%;
     }
 
     .screenshot .screenshot-icon{
@@ -103,6 +105,10 @@
         font-size: 2rem;
         line-height: 2rem;
 
+    }
+
+    .screenshot-desc {
+        width: 45%;
     }
 
     .screenshot-desc p{
@@ -150,7 +156,9 @@
 
     .download-container{
         max-width: 800px;
-        gap:0;
+        padding:20px;
+        padding-bottom: 0;
+        overflow: hidden;
     }
 
     .download-page h1{
@@ -163,6 +171,14 @@
 
     .footerNav{
         max-width: 800px;
+        padding: 20px;
+    }
+
+    .list-temp{
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+        padding:4px;
     }
 }
 
@@ -170,11 +186,16 @@
 
 
 @media only screen and (max-width: 768px) {
+
+    *{
+    box-sizing: border-box;
+    }
     /*
     Mobile Nav Related Properties
     */
     #mobileNav{
         display: flex;
+        width:auto;
       }
   
       .wbColorBar{
@@ -298,11 +319,15 @@
 
 .slider-container{
     max-width: 800px;
-    padding: 0;
+    padding: 25px;
+}
+
+.screenshot-section .container{
+    max-width: auto;
 }
 
 .screenshots .screenshot {
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap:5%;
 }
@@ -349,8 +374,8 @@
 }
 
 .list-temp{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     line-height: 40px;
     padding:4px;
 }
@@ -383,6 +408,14 @@
 
 .download-container {
 overflow: hidden;
+padding: 0;
+}
+
+
+.download-section {
+    padding: 25px;
+    padding-bottom: 0;
+    padding-right: 0;
 }
 }
 
@@ -397,6 +430,31 @@ overflow: hidden;
     .home-page .header-phone img{
         height: 400px;
     }
+
+    #mobileNav{
+        width:auto;
+    }
+
+    .feature-section .container{
+        max-width: 550px;
+        padding: 25px;
+    }
+
+    .slider-container {
+        /* max-width: 800px; */
+        padding: 25px;
+    }
+
+    .c-card{
+        width:300px;
+        height:auto;
+    }
+
+    .c-card img{
+        width: 100%;
+        object-fit: cover;
+    }
+
     .screenshots{
         width:auto;
         max-width: 400px;
@@ -443,29 +501,59 @@ overflow: hidden;
         bottom: -60px;
     }
 
-    .container{
+    .reviews-section .container{
         max-width: 550px;
+        padding: 25px;
     }
+
+
+    .download-section{
+        margin-top: 15px;
+    }
+
+    .download-container {
+        overflow: hidden;
+        flex-direction: column;
+        padding: 15px;
+        padding-bottom: 0;
+    }
+
+    .download-page {
+        width: 100%;
+    }
+
+    .download-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
     .download-page p{
         line-height: 1;
     }
     .download-page .buttons{
-        flex-direction: column;
+        margin-bottom: 10px;
     }
-    .download-image{
-        align-self: flex-end;
+    
+    .footerNav{
+        padding: 10px;
+        flex-wrap: wrap;
     }
 
     .footerNav .middle {
-        width: auto;
+        width: 350px;
     }
 
     .footerNav .right{
-        width:auto;
+        position: absolute;
+        top: 25px;
+        right: 20px;
     }
 
-    .footerNav .right{
-        flex-direction: column;
+    .list-temp {
+        font-size: small;
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
     }
 }
   

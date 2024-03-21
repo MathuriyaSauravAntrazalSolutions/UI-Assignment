@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding:0;
-    /* box-sizing: border-box; */
     /* border:1px solid red; */
 }
 
@@ -96,8 +95,8 @@ body {
 /*---------Sticky Nav----------*/
 
 #sticky-nav {
+    /* box-sizing: initial; */
     width:100%;
-    box-sizing: none;
     max-width: 1000px;
     display: none;
     justify-content: space-between;
