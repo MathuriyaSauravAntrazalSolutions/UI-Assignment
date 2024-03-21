@@ -50,18 +50,15 @@ stickyNavhamburger.addEventListener("click", () => {
  * Sticky Navbar
  */
 
-var navbar = document.getElementById("web-nav");
 var stickyNav = document.getElementById("sticky-nav");
 var home = document.getElementById("Home");
-var sticky = home.offsetTop+100;
+var sticky = home.offsetTop;
 
 function myFunction() {
   console.log(window.scrollY);
-  if (window.scrollY >= sticky) {
-    navbar.style.display="none";
+  if (window.scrollY > sticky) {
     stickyNav.style.display="flex";
   } else {
-    navbar.style.display="flex";
     stickyNav.style.display="none";
   }
 }
